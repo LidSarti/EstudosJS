@@ -2,7 +2,7 @@ function calculadora(){
     const operacao = prompt("Escolha uma operação\n1- soma (+)\n2- Subtração (-)\n3- Multiplicação\n4- Divisão real(/)\n5- Divisão inteira(%)\n6- Potenciação(**)");
 
     if (!operacao || operacao >= 7){
-        alert('Erro - operação inválida!')
+        alert('Erro - operação inválida!');
         calculadora();
     } else {
 
@@ -11,8 +11,8 @@ function calculadora(){
         let resultado;
 
         if(!primeiroValor || !segundoValor){
-            alert('Erro - parâmetros inválidos')
-            calculadora()
+            alert('Erro - parâmetros inválidos');
+            calculadora();
         } else {
             function soma(){
                 resultado = primeiroValor + segundoValor;
@@ -85,7 +85,4 @@ function calculadora(){
         }
     }
 }
-
-    
-
 calculadora();
