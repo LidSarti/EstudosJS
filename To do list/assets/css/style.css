@@ -1,5 +1,5 @@
 * {
-    font-family: Helvetica, sans-serif;
+    font-family: sans-serif;
 }
 
 body{
@@ -7,14 +7,37 @@ body{
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    background-color: rgb(244, 244, 244);
 }
 
 button{
     border-radius: 5px;
-    border-color: rgb(249, 153, 184);
-    background-color: rgb(249, 153, 184);
-    color: rgb(40, 41, 41);
+    border: 1px solid rgb(107, 0, 57);
+    background-color: rgb(255, 206, 222);
+    color: rgb(107, 0, 57);;
     text-align: center;
     padding: 5px;
 }
 
+input[type="text"] {
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid rgb(35, 35, 35);
+}
+
+#tasks {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.task-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+:checked + label {
+    text-decoration: line-through;
+    color: rgb(159, 159, 159);
+}
